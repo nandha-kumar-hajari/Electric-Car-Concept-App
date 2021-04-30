@@ -12,8 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       themeMode: ThemeMode.system,
       theme: MyTheme.lightTheme(context),
-      home: HomeScreen()
-      ,
+      home: HomeScreen(),
     );
   }
 }

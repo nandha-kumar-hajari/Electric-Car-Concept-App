@@ -59,15 +59,18 @@ class _HomeBottomState extends State<HomeBottom> {
                       itemCount: CarModel.items.length,
                       itemBuilder: (context, index) {
                         return InkWell(
-                            onTap: () => Navigator.push(
+                            onTap: () {
+                              FocusManager.instance.primaryFocus.unfocus();
+                              Navigator.push(
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => DetailScreen(
                                     car: CarModel.items[index],
                                   ),
                                 ),
-                              ),
-                          child: PopularTile(car: CarModel.items[index]));
+                              );
+                            },
+                            child: PopularTile(car: CarModel.items[index]));
                       },
                     ),
                   ),
@@ -82,14 +85,17 @@ class _HomeBottomState extends State<HomeBottom> {
                     itemCount: CarModel.items.length,
                     itemBuilder: (context, index) {
                       return InkWell(
-                          onTap: () => Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => DetailScreen(
-                                    car: CarModel.items[index],
-                                  ),
+                          onTap: () {
+                            FocusManager.instance.primaryFocus.unfocus();
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => DetailScreen(
+                                  car: CarModel.items[index],
                                 ),
                               ),
+                            );
+                          },
                           child: CarTile(car: CarModel.items[index]));
                     }),
               ]),

@@ -1,6 +1,19 @@
 import 'package:flutter/material.dart';
 
-class SearchBar extends StatelessWidget {
+class SearchBar extends StatefulWidget {
+  @override
+  _SearchBarState createState() => _SearchBarState();
+}
+
+class _SearchBarState extends State<SearchBar> {
+  final _myFocusNode = FocusNode();
+
+  @override
+  void dispose() {
+    _myFocusNode.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Flexible(
@@ -25,6 +38,7 @@ class SearchBar extends StatelessWidget {
               ),
               Expanded(
                 child: TextFormField(
+                  focusNode: _myFocusNode,
                   decoration: InputDecoration(
                     hintText: "Search here",
                     hintStyle: TextStyle(color: Colors.black26),
