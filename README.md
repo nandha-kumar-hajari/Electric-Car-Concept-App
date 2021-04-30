@@ -1,16 +1,22 @@
-# car_app
+# Electric Car Concept app built using Flutter
 
-A new Flutter project.
+## Screenshots:
 
-## Getting Started
+  ![alt text](https://github.com/nandha-kumar-hajari/Electric-Car-Concept-App-/blob/main/screenshots/home.jpg)   ![alt text](https://github.com/nandha-kumar-hajari/Electric-Car-Concept-App/blob/main/screenshots/detail.jpg)
 
-This project is a starting point for a Flutter application.
+## Plugins Used:
 
-A few resources to get you started if this is your first Flutter project:
+- [Google Fonts](https://pub.dev/packages/google_fonts)
+- [Velocity X](https://pub.dev/packages/velocity_x)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Animation Widgets used:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- BouncingScrollPhysics
+- Hero
+
+## Icons from:
+[FlatIcon](https://www.flaticon.com)
+
+## Credits:
+ - [Design inspiration](https://dribbble.com/Ruhin)
+ - [Arc Help](https://pub.dev/packages/velocity_x)
